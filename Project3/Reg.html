@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regestration</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+        }
+        #Reg{
+            height: 400px;
+            width: 290px;
+            /* border: 1px solid black; */
+            box-shadow: 2px 0.9px 10px 2px black;
+            border-radius: 15px;
+            background-color: white;
+        }
+        .pro{
+            height: 55px;
+            width: 290px;
+            background-color: red;
+            border-radius: 15px 15px 0 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: sans-serif;
+        }
+        form{
+            margin-left: 20px;
+            font-family: sans-serif;
+        }
+        #reghd{
+            transform: translate(-30px);
+        }
+        #sbt{
+            display: block;
+            height: 27px;
+            width: 100px;
+            border-radius: 6px;
+            background-color: orange;
+            font-size: 16px;
+        }
+        .typeIn{
+            display: block;
+            outline: none;
+            border: none;
+            border-bottom: 1.5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="Reg">
+       <header class="pro">
+          <h1 id="reghd">Regestration</h1>
+       </header>
+       <form action="">
+         <br><input type="text" placeholder="Enter Name" class="typeIn"><br>
+         <input type="tel" placeholder="Enter Mobile Number" class="typeIn"><br>
+         <input type="email" placeholder="Enter Email" class="typeIn"><br>
+
+         <label for="">Select Your Gender</label><br><br>
+         <label for="">Male</label>
+         <input type="radio" name="Gender"><br><br>
+         <label for="">Female</label>
+         <input type="radio" name="Gender"><br><br>
+         <label for="">Others</label>
+         <input type="radio" name="Gender"><br><br>
+         <input type="submit" id="sbt">
+       </form>
+    </div>
+</body>
+</html>
